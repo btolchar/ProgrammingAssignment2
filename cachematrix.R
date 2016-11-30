@@ -31,4 +31,6 @@ cacheSolve <- function(x, ...) {
         x$setInverse(inv)
         inv
 }
-solve(x)
+z <- matrix(rnorm(16),4,4)
+z1 <- makeCacheMatrix(z)
+cacheSolve(z1)
